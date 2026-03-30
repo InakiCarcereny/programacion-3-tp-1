@@ -11,36 +11,37 @@
 
     <main class="maingeneral">
     <section class="left">
-        <p>ENGAGMENT PHASE</p>
-        <h1 class="tituloleft">Architecture of <br><h1>Personalized</h1> <h1>Care.</h1>
-        <p class="descrleft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam eius aperiam accusantium amet, voluptatibus rerum labore ab quos repudiandae provident, nobis incidunt deleniti esse molestiae vel similique quis aliquid? Praesentium.</p>
+        <span class="textmini">ENGAGMENT PHASE</span>
+        <h1 class="tituloleft">Architecture of <br> <span>Personalized</span> Care.</h1>
+        <p class="descrleft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae magnam, eligendi quaerat numquam tempore unde recusandae deserunt deleniti perspiciatis ut assumenda porro dolor fugiat omnis sequi eveniet quisquam obcaecati officiis. </p>
         
         <div class="info">
             <div class="secure">
                 <div class="textinfo">
                     <h3>Secure Processing</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius necessitatibus libero tenetur autem, odio dolorem voluptas mollitia repellendus hic! Natus repudiandae vel dolorem. Tenetur minima officiis aliquid laudantium quae fuga.</p>
+                    <p class="descinfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius necessitatibus libero tenetur autem</p>
                 </div>
             </div>
 
             <div class="responsetime">
                 <div class="textinfo">
                     <h3>24h Response Time</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex, adipisci reprehenderit architecto dicta enim, totam sunt sapiente error, debitis quibusdam porro officiis hic. Reiciendis ab reprehenderit quod quo pariatur.</p>
+                    <p class="descinfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex, adipisci reprehenderit architecto dicta enim.</p>
                 </div>
             </div>
 
             <div class="imagen">
-                <img src="../assets/img/img-pedido.png" alt="compu">
+                <img class="imagencompu" src="../assets/img/img-pedido.png" alt="compu">
+                <div class="overlay"></div>
             </div>
         </div>
-
+        </section>
         <section class="right">
             <div class="contentright">
                 <form method="post">
 
                     <div class="seccion">
-                            <p>01. Identificacion</p>
+                            <p class="titlesections">01. Identificacion</p>
                     </div>
                     <div class="campo">
                         <label for="nombre-completo">Nombre completo</label>
@@ -53,20 +54,23 @@
 
 
                     <div class="seccion">
-                            <p>02. Especificaciones</p>
+                            <p class="titlesections">02. Especificaciones</p>
                     </div>
-                    <div class="campo">
-                        <label for="servicios">Tipo de servicio</label>
-                            <select id="servicios" name="servicios">
-                                <option value="1">Opción 1</option>
-                                <option value="2">Opción 2</option>
-                                <option value="3">Opción 3</option>
-                            </select>
+                    <div class="campo-identificacion">
+                        <div class="campo">
+                            <label for="servicios">Tipo de servicio</label>
+                                <select id="servicios" name="servicios">
+                                    <option value="1">Opción 1</option>
+                                    <option value="2">Opción 2</option>
+                                    <option value="3">Opción 3</option>
+                                </select>
+                        </div>
+                        <div class="campo">
+                            <label for="fecha">Fecha</label>
+                            <input type="date" name="Fecha" id="Fecha">
+                        </div>
                     </div>
-                    <div class="campo">
-                        <label for="fecha">Fecha</label>
-                        <input type="date" name="Fecha" id="Fecha">
-                    </div>
+
 
                     <div class="seccionchekbox">
                             <p>Requerimientos adiccionales</p>
@@ -87,7 +91,7 @@
                     </div>
 
                     <div class="seccion">
-                            <p>03. Descripción del Proyecto</p>
+                            <p class="titlesections">03. Descripción del Proyecto</p>
                     </div>
 
                     <div class="campo">
@@ -111,7 +115,7 @@
 
 
 
-        </section>
+
 
     </main>
 </body>

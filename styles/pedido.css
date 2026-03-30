@@ -1,7 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap');
 
-body{
-    font-family: 'Inter', sans-serif;
-    background-color: #F8FAFC;
+
+/* 1. RESET UNIVERSAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8FAFC; 
+    color: #334155;
+    line-height: 24px; 
+}
+
+/*División a la mitad */
+.maingeneral {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+/* 3. SECCIÓN IZQUIERDA */
+.left {
+    padding: 64px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.textmini{
+    font-size: 12px;
+    letter-spacing: 4px; 
+    color: #0B513D;
+}
+
+.tituloleft {
+    font-family: 'Manrope', sans-serif;
+    font-size: 56px; 
+    font-weight: 800;
+    line-height: 64px; 
+    color: #064E3B; 
+    margin-bottom: 32px; 
+}
+
+.tituloleft span {
+    color: #8E9193
+    
+}
+
+.descrleft {
+    font-size: 16px; 
+    color: #64748b;
+    margin-bottom: 48px; 
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.textinfo h3 {
+    font-family: 'Manrope', sans-serif;
+    color: #064E3B; 
+    margin-bottom: 8px; 
+    font-size: 20px;
+}
+
+.descinfo {
+    font-size: 16px; 
+    color: #64748b;
+}
+
+.imagen {
+    margin-top: 48px;
+    border-radius: 16px; 
+    overflow: hidden;
+    height: 300px; 
+    position: relative;
+}
+
+.imagencompu {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+.right {
+    background-color: #F8FAFC; 
+    padding: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentright {
+    width: 100%;
+    max-width: 560px; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+}
+
