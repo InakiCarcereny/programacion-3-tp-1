@@ -72,11 +72,11 @@ main {
 	font-size: 4rem;
 	font-weight: bolder;
 	color: var(--primary-color);
-	max-width: 550px;
+	max-width: 600px;
 }
 
-.content h1 span {
-	color: #747779 !important;
+.content .strong-word {
+	color: #747779;
 }
 
 .content p {
@@ -311,7 +311,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	margin-bottom: 0 !important;
+	margin-bottom: 0;
 }
 
 .strategic-content article header small {
