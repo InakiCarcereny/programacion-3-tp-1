@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap');
 
 
-/* 1. RESET UNIVERSAL */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +10,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #F8FAFC; 
+    background-color: #f7f9fb;
     color: #334155;
     line-height: 24px; 
 }
@@ -20,20 +19,23 @@ body {
 .maingeneral {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 100vh;
+    width: 1000px;
+    margin: auto;
+
 }
 
-/* 3. SECCIÓN IZQUIERDA */
+
 .left {
     padding: 64px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #ffffff;
+    background-color: #f7f9fb;
 }
 
 .textmini{
     font-size: 12px;
+    font-weight: 700;
     letter-spacing: 4px; 
     color: #0B513D;
 }
@@ -48,13 +50,13 @@ body {
 }
 
 .tituloleft span {
-    color: #8E9193
+    color: #707974;
     
 }
 
 .descrleft {
     font-size: 16px; 
-    color: #64748b;
+    color: #707974;
     margin-bottom: 48px; 
 }
 
@@ -93,11 +95,14 @@ body {
 
 
 .right {
-    background-color: #F8FAFC; 
-    padding: 64px;
+    background-color: #f1f3f5; 
+    padding: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 56px;
+    margin-bottom: 56px;
+    border-radius: 32px;
 }
 
 .contentright {
@@ -108,6 +113,126 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    gap: 16px; 
+    gap: 24px; 
 }
 
+.seccion{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-bottom: 8px;
+}
+
+.firstsection label, .secondsection label{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: #334155;
+}
+.seccionchekbox label{
+    font-size: 12px;
+    font-weight: 700;
+    color: #334155;
+}
+
+.campo{
+    width: 100%;
+    margin-right: 16px;
+    flex-direction: column;
+
+}
+
+.firstsection, .secondsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    gap: 20px;
+}
+
+
+
+.firstsection input{
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    padding: 16px;
+    height: 52px; 
+    background-color: #ffffff;
+    font-size: 12px;
+    
+}
+
+
+input::placeholder {
+    color: #94a3b8;          
+    font-size: 16px;         
+    font-weight: 400;        
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%; 
+}
+
+input[type="date"]{
+    color: black;
+    font-size: 16px;         
+    font-weight: 400;        
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%; 
+    font-family: 'Inter', sans-serif;
+
+}
+
+.secondsection input{
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    padding: 16px;
+    height: 52px; 
+    background-color: #ffffff;
+    font-size: 12px;
+}
+select{
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: none;
+    height: 52px;
+    width: 100%;
+    padding: 12px;
+
+}
+select:invalid,
+select:has(option[value=""]:checked) {
+    color: #000000;
+    padding: 12px;
+    font-family: 'Inter', sans-serif;
+
+}
+.checkboxright, .checkboxleft{
+    display: flex;
+    flex-direction: column;
+    width: 214px;
+
+}
+
+.optionscheckbox{
+    display: flex;
+    gap: 20px;
+
+}
+
+.optionscheckbox label{
+    background-color: white;
+    padding: 16px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.optionscheckbox input{
+    margin-right: 4px;
+}
