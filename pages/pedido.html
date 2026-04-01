@@ -1,37 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/pedido.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Document</title>
 </head>
 <body>
+    <header class="main-header">
+        <h2 class="company-name">
+        CURATORIAL
+        </h2>
 
+        <nav class="nav-container">
+        <ul>
+            <li><a class="active" href="/">Inicio</a></li>
+            <li><a href="./pages/servicios.html">Servicios</a></li>
+            <li><a href="./pages/equipo.html">Sobre Nosotros</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+            <li><a href="./pages/faq.html">FAQ</a></li>
+        </ul>
+        </nav>
+
+        <a class="request-service-button" href="./pages/pedido.html">
+        Solicitar Servicio
+        </a>
+    </header>
     <main class="maingeneral">
     <section class="left">
-        <span class="textmini">ENGAGMENT PHASE</span>
-        <h1 class="tituloleft">Architecture of <br> <span>Personalized</span> Care.</h1>
-        <p class="descrleft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae magnam, eligendi quaerat numquam tempore unde recusandae deserunt deleniti perspiciatis ut assumenda porro dolor fugiat omnis sequi eveniet quisquam obcaecati officiis. </p>
+        <span class="textmini">FASE DE COMPROMISO</span>
+        <h1 class="tituloleft">Arquitectura de <br> <span>Cuidado</span> Personalizado.</h1>
+        <p class="descrleft">Tratamos cada solicitud como un proyecto único. Por favor, proporcione los detalles esenciales para comenzar su viaje curado con nuestra arquitectura de servicios editoriales. </p>
         
         <div class="info">
             <div class="secure">
+                <div class="icon-container shield">
+                    <span class="material-symbols-outlined">verified_user</span>
+                </div>
                 <div class="textinfo">
-                    <h3>Secure Processing</h3>
-                    <p class="descinfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius necessitatibus libero tenetur autem</p>
+                    <h3>Procesamiento Seguro</h3>
+                    <p class="descinfo">Sus datos se manejan con precisión administrativa y absoluta privacidad.</p>
                 </div>
             </div>
 
             <div class="responsetime">
+                <div class="icon-container clock">
+                    <span class="material-symbols-outlined">schedule</span>
+                </div>
                 <div class="textinfo">
-                    <h3>24h Response Time</h3>
-                    <p class="descinfo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex, adipisci reprehenderit architecto dicta enim.</p>
+                    <h3>Tiempo de Respuesta de 24h</h3>
+                    <p class="descinfo">Nuestros curadores revisan y validan todas las solicitudes de servicio en un plazo de un día hábil.</p>
                 </div>
             </div>
 
             <div class="imagen">
-                <img class="imagencompu" src="../assets/img/img-pedido.png" alt="compu">
+                <img class="imagencompu" src="../assets/img/pedido1.png" alt="compu">
                 <div class="overlay"></div>
             </div>
         </div>
@@ -41,15 +67,22 @@
                 <form method="post">
 
                     <div class="seccion">
-                            <p class="titlesections">01. Identificacion</p>
+                            <p class="titlesections">01. Identidad</p>
                     </div>
                     <div class="firstsection">
-                         <div class="campo">
-                        <label for="nombre-completo">Nombre completo</label> 
+                        <div class="campo">
+                            <div class="tittlelabel">
+                                <label for="nombre-completo">Nombre Legal</label> 
+                            </div>
+
+                                                      
+
                         <input type="text" name="nombre-completo" id="nombre-completo" placeholder="E.g. Juan">
                     </div>
                     <div class="campo">
-                        <label for="numero">Numero de telefono</label> 
+                            <div class="tittlelabel">
+                                <label for="numero">Teléfono de Referencia</label> 
+                            </div>
                         <input type="text" name="numero" id="numero" placeholder="+54 (555) 0000000">
                     </div>
                     </div>
@@ -63,7 +96,9 @@
                     
                     <div class="secondsection">
                             <div class="campo">
-                                <label for="servicios">Tipo de servicio</label> 
+                                <div class="tittlelabel">
+                                    <label for="servicios">Tipo de servicio</label> 
+                                </div>
                                     <select id="servicios" name="servicios" >
                                         <option class="select-option"value="" disabled selected>Selecciona una opción</option>
                                         <option value="1">Opción 1</option>
@@ -72,7 +107,9 @@
                                     </select>
                             </div>
                             <div class="campo">
-                                <label for="fecha">Fecha</label>
+                                <div class="tittlelabel">
+                                    <label for="fecha">Fecha de inicio</label>
+                                </div>
                                 <input type="date" name="Fecha" id="Fecha">
                             </div>
                     </div>
@@ -81,14 +118,17 @@
 
 
                     <div class="seccionchekbox">
-                            <p>Requerimientos adiccionales</p>
+                            <div class="tittlelabel">
+                                    <p>Requisitos Adiccionales</p>
+                            </div>
+                            
                         <div class="optionscheckbox">
                             <div class="checkboxright">
                                 <label for="opcion">
-                                    <input type="checkbox" name="opcion" id="propridad"> Proridad
+                                    <input type="checkbox" name="opcion" id="propridad"> Ejecución Prioritaria
                                 </label>
                                 <label for="opcion">
-                                    <input type="checkbox" name="opcion" id="on-site"> Presencial
+                                    <input type="checkbox" name="opcion" id="on-site"> Consulta In Situ
                                 </label>
                             </div>
                             <div class="checkboxleft">
@@ -108,15 +148,21 @@
                             <p class="titlesections">03. Descripción del Proyecto</p>
                     </div>
 
-                    <div class="campo">
-                        <label for="comentarios">Comentarios Adiccionales</label> <br>
-                        <textarea name="comentarios" id="comentarios" rows="4"></textarea>
+
+                    <div class="thirdsection"> 
+                        <div class="campo">
+                        <div class="tittlelabel">
+                            <label for="comentarios">Comentarios Adiccionales</label> <br>
+                        </div>
+                        <textarea name="comentarios" id="comentarios" rows="4" placeholder="Describe los detalles de tu solicitud..."></textarea>
 
                     </div>
+                    </div>
+
 
                     <div class="botones-finales">
                         <button class="botonenviar" type="submit">Enviar</button>
-                        <button class="botonreset" type="reset">Resetear</button>
+                        <button class="botonreset" type="reset">Restablecer</button>
 
                     </div>
 
@@ -127,5 +173,66 @@
 
 
     </main>
+      <footer class="main-footer">
+    <div class="bg-container">
+      <section class="sections-container">
+        <div class="footer-container">
+          <div class="footer-content">
+            <h4>
+              CURATORIAL
+            </h4>
+
+            <p>
+              Elevar los estándares de servicio a través de la curaduría experta y la arquitectura profesional.
+            </p>
+          </div>
+          
+          <div class="footer-content">
+            <h4 class="footer-label">
+              EXPLORAR
+            </h4>
+
+            <ul class="footer-list">
+              <li class="footer-element">SERVICIOS</li>
+              <li class="footer-element">PORTAFOLIO</li>
+              <li class="footer-element">NUESTRA VISIÓN</li>
+            </ul>
+          </div>
+
+          <div class="footer-content">
+            <h4 class="footer-label">
+              CONECTAR
+            </h4>
+
+            <ul class="footer-list">
+              <li class="footer-element">LINKEDIN</li>
+              <li class="footer-element">INSTAGRAM</li>
+              <li class="footer-element">CONTACTO</li>
+            </ul>
+          </div>
+
+          <div class="footer-content">
+            <h4 class="footer-label">
+              LEGAL
+            </h4>
+
+            <ul class="footer-list">
+              <li class="footer-element">POLÍTICA DE PRIVACIDAD</li>
+              <li class="footer-element">TÉRMINOS DE SERVICIO</li>
+              <li class="footer-element">CONFIGURACIÓN DE COOKIES</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="separator-line">
+
+        </div>
+
+        <p class="rights">
+          © 2026 Curatorial Service Architecture. Todos los derechos reservados.
+        </p>
+      </section>
+    </div>
+  </footer>
 </body>
 </html>
