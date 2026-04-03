@@ -1,42 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap');
+
+.maingeneral {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "titulo preguntas"
+        "temas preguntas"
+        "contacto preguntas"
+        "soporte soporte";
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.left {
+    padding-right: 64px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: titulo;
+}
+
+.textmini{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px; 
+    color: var(--primary-color);
+}
+
+.tituloleft {
+    font-family: 'Manrope', sans-serif;
+    font-size: 56px; 
+    font-weight: 800;
+    line-height: 64px; 
+    color: var(--primary-color); 
+    margin-bottom: 32px; 
+}
+
+.tituloleft span {
+    color: var(--secondary-bg-color);
+    
+}
+
+.descrleft {
+    font-size: 16px; 
+    color: var(--secondary-color);
+    margin-bottom: 48px; 
+}
+
+/*-------------------SECCION DE TEMAS*/
 .seccionTemas {
     display: flex;
     flex-direction: column;
     min-width: 100px;
-}
+    grid-area: temas;
 
-.maingeneral {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 40px;
-  max-width: 1000px;
-  margin: 40px auto;
 }
-
-.left {
-  flex: 1 1 60%;
-}
-
-.seccionTemas, .seccionContactanos {
+.seccionTemas {
   background-color: var(--secondary-bg-color);
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
-  
+  font-family: 'Manrope', sans-serif;
 }
 
-.seccionPreguntas {
-  flex: 1 1 100%;
+.seccionTemas span{
+  padding: 7px;
+  border-radius: 10px;
 }
 
+.tituloTema {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+/*-------------------SECCION DE CONTACTOS*/
+.seccionContactanos {
+    background-color: var(--primary-color);
+    color: var(--secondary-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    grid-area: contacto;
+}
+
+.seccionContactanos span{
+    color: var(--secondary-bg-color);
+    padding: 30px;
+    border-radius: 10px;
+    font-family: 'Manrope', sans-serif;
+    
+}
+
+.seccionContactanos button{
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-color);
+}
+
+/*-------------------SECCION DE SOPORTE*/
 .seccionSoporte {
+  font-family: 'Manrope', sans-serif;
   grid-column: 1 / -1;
   background-color: var(--secondary-bg-color);
   padding: 30px;
   border-radius: 10px;
   margin-top: 40px;
+  grid-area: soporte;
+}
+.botonBlanco {
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-color);
+}
+
+/*-------------------SECCION DE PREGUNTAS*/
+.seccionPreguntas {
+  flex: 1 1 100%;
+  font-family: 'Manrope', sans-serif;
+  grid-area: preguntas;
+  align-self: center;
+  margin-top: 40px;
 }
 
 .pregunta {
-  background-color: white;
   border-radius: 10px;
   margin-bottom: 15px;
   overflow: hidden;
@@ -59,7 +143,7 @@
 
 .pregunta[open] summary {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--secondary-bg-color);
 }
 
 .pregunta summary::after {
@@ -82,7 +166,7 @@ button {
 }
 
 button:hover {
-  background-color: #2b6954;
+  background-color: var(--primary-color);
 }
 
 
@@ -110,7 +194,7 @@ button:hover {
 .footer-content p,
 .footer-element {
   font-size: 14px;
-  color: #d1d5db;
+  color: var(--secondary-color);
 }
 
 .footer-list {
@@ -119,7 +203,7 @@ button:hover {
 
 .separator-line {
   height: 1px;
-  background-color: #ccc;
+  background-color: var(--secondary-color);
   margin: 30px auto;
   max-width: 1000px;
 }
