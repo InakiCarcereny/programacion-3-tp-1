@@ -1,0 +1,130 @@
+.seccionTemas {
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+}
+
+.maingeneral {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.left {
+  flex: 1 1 60%;
+}
+
+.seccionTemas, .seccionContactanos {
+  background-color: var(--secondary-bg-color);
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+
+.seccionPreguntas {
+  flex: 1 1 100%;
+}
+
+.seccionSoporte {
+  grid-column: 1 / -1;
+  background-color: var(--secondary-bg-color);
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.pregunta {
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.pregunta summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pregunta p {
+  padding: 0 20px 20px;
+  color: var(--secondary-color);
+}
+
+.pregunta[open] summary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.pregunta summary::after {
+  content: "⌄";
+  font-size: 18px;
+  transition: transform 0.3s;
+}
+
+.pregunta[open] summary::after {
+  transform: rotate(180deg);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--neutral-color);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2b6954;
+}
+
+
+
+.main-footer {
+  background-color: var(--secondary-bg-color);
+  color: var(--neutral-color);
+  margin-top: auto;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-content h4 {
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.footer-content p,
+.footer-element {
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+.footer-list {
+  list-style: none;
+}
+
+.separator-line {
+  height: 1px;
+  background-color: #ccc;
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+.rights {
+  text-align: center;
+  font-size: 12px;
+}
