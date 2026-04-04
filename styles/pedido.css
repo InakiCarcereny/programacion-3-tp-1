@@ -35,7 +35,7 @@
     color: #0B513D;
 }
 
-.tituloleft {
+.lefttittle {
     font-family: 'Manrope', sans-serif;
     font-size: 56px; 
     font-weight: 800;
@@ -44,7 +44,7 @@
     margin-bottom: 32px; 
 }
 
-.tituloleft span {
+.lefttittle span {
     color: #707974;
     
 }
@@ -81,7 +81,7 @@
     position: relative;
 }
 
-.imagencompu {
+.imagenpc {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -152,8 +152,8 @@ form {
     margin-right: 16px;
     flex-direction: column;
 
-
 }
+
 
 .firstsection, .secondsection{
     display: grid;
@@ -178,7 +178,7 @@ form {
 
 input::placeholder {
     color: #94a3b8;          
-    font-size: 16px;         
+    font-size: 12px;         
     font-weight: 400;        
     opacity: 1;
     display: flex;
@@ -209,7 +209,7 @@ input[type="date"]{
     background-color: #ffffff;
     font-size: 12px;
 }
-select{
+.select-wrapper select{
     background-color: #ffffff;
     border-radius: 8px;
     border: none;
@@ -218,8 +218,8 @@ select{
     padding: 12px;
 
 }
-select:invalid,
-select:has(option[value=""]:checked) {
+.select-wrapper select:invalid,
+.select-wrapper select:has(option[value=""]:checked) {
     color: #000000;
     padding: 12px;
     font-family: 'Inter', sans-serif;
@@ -289,12 +289,12 @@ select:has(option[value=""]:checked) {
 }
 
 
-.botonesfinales{
+.final-buttons{
     font-family: 'Inter', sans-serif;
     
 }
 
-.botonenviar{
+.send{
     background-color: #064e3b;
     color:white;
     text-decoration: none;
@@ -308,13 +308,13 @@ select:has(option[value=""]:checked) {
 
 }
 
-.botonenviar:hover{
+.send:hover{
     background-color: #2b6954;
 
 }
 
 
-.botonreset{
+.reset{
     border-radius: 12px;
     cursor: pointer;
     border: none;
