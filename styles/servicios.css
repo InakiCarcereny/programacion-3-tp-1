@@ -1,4 +1,3 @@
-/* CONTENEDOR */
 .services-container {
     max-width: 1000px;
     width: 100%;
@@ -144,14 +143,8 @@
     margin: auto;
 }
 
-.main-footer .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
 .main-footer .rights {
-    margin-top: 10px;
-    margin-bottom: 40px;
+    margin-top: 5px;
+    margin-bottom: 25px;
     text-align: center;
 }
