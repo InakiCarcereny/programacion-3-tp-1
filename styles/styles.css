@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-family:
+		system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root {
+	--primary-color: #064e3b;
+	--secondary-color: #334155;
+	--neutral-color: #f8fafc;
+	--primary-bg-color: #f7f9fb;
+	--secondary-bg-color: #f2f4f6;
+}
+
+.main-header {
+	max-width: 100%;
+	width: 100%;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 15px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+}
+
+.company-name {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: var(--primary-color);
+}
+
+.nav-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-container ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+.nav-container li {
+	list-style: none;
+}
+
+.nav-container a {
+	text-decoration: none;
+	color: var(--secondary-color);
+	font-size: 1rem;
+	transition: color 0.3s ease;
+	font-weight: bold;
+}
+
+.nav-container a:hover {
+	color: #2b6954;
+}
+
+.active {
+	color: #2b6954 !important;
+	border-bottom: #2b6954 2px solid;
+}
+
+.request-service-button {
+	background-color: var(--primary-color);
+	color: var(--neutral-color);
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+	text-decoration: none;
+}
+
+.request-service-button:hover {
+	background-color: #2b6954;
+}
+
+.footer-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.footer-content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.footer-content h4 {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: var(--primary-color);
+}
+
+.footer-container .footer-content p {
+	font-size: 1rem;
+	color: #444749;
+	max-width: 300px;
+}
+
+.footer-content .footer-label {
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: var(--primary-color);
+}
+
+.footer-content .footer-list {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	list-style: none;
+}
+
+.footer-content .footer-list .footer-element {
+	font-size: 0.8rem;
+	color: #444749;
+}
+
+.footer-content .footer-list .footer-element:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	text-decoration-color: #95d3ba;
+}
+
+.separator-line {
+	width: 100%;
+	height: 1px;
+	background-color: #e0e3e5;
+	margin: 50px 0;
+}
+
+.rights {
+	font-size: 0.8rem;
+	color: #444749;
+	text-align: center;
+}
