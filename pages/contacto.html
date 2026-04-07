@@ -3,11 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contacto</title>
-        <meta name="description" content="Ya sea que busques precisión arquitectónica o gestión de servicios editoriales, nuestro equipo está listo para convertir tu visión en realidad.">
+        <title>CURATORIAL - Contacto</title>
+        <meta name="description" content="Póngase en contacto con CURATORIAL para analizar sus necesidades de arquitectura de servicios. Nuestro equipo está listo para brindar soluciones personalizadas y orientación experta para hacer realidad su visión con precisión y excelencia.">
         <link rel="icon" type="image/png" href="../assets/favicon/favicon.png">
         <link rel="stylesheet" href="../styles/styles.css">
-        <link rel="stylesheet" href="../styles/home.css">
         <link rel="stylesheet" href="../styles/contacto.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
@@ -21,21 +20,21 @@
             <nav class="nav-container">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/equipo.html">Sobre Nosotros</a></li>
-                <li><a class="active" href="./contacto.html">Contacto</a></li>
-                <li><a href="./pages/faq.html">FAQ</a></li>
+                <li><a href="../pages/servicios.html">Servicios</a></li>
+                <li><a href="../pages/equipo.html">Sobre Nosotros</a></li>
+                <li><a class="active" href="../contacto.html">Contacto</a></li>
+                <li><a href="../pages/faq.html">FAQ</a></li>
             </ul>
             </nav>
 
-            <a class="request-service-button" href="./pages/pedido.html">
+            <a class="request-service-button" href="../pages/pedido.html">
             Solicitar Servicio
             </a>
         </header>
 
         <main>
             <section class="title-section">
-                <h1>Creemos tu <nav class="highlight"> próxima obra maestra</higlight></h1>
+                <h1>Creemos tu <span class="highlight"> próxima obra maestra</span></h1>
                 <p>Ya sea que busques precisión arquitectónica o gestión de servicios editoriales, nuestro equipo está listo para convertir tu visión en realidad.</p>
             </section>
 
@@ -43,8 +42,8 @@
                 <div class="image-section">
                     <img src="../assets/images/desk.png" alt="Oficina" class="main-img">
                     <div class="info-card">
-                    <h3>Our Headquarters</h3>
-                    <p>1202 Curatorial Plaza, Editorial District<br>London, EC1A 1BB</p>
+                    <h3>Nuestra Sede</h3>
+                    <p>1202 Curatorial Plaza, Distrito Editorial<br>Londres, EC1A 1BB</p>
                     </div>
                 </div>
 
@@ -52,23 +51,23 @@
                     <form>
                         <div class="row">
                             <div class="input-group">
-                            <label>Nombre</label>
-                            <input type="text" placeholder="E.g. Julian">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" placeholder="E.g. Julian">
                             </div>
                             <div class="input-group">
-                            <label>Apellido</label>
-                            <input type="text" placeholder="E.g. Vane">
+                            <label for="last-name">Apellido</label>
+                            <input type="text" id="last-name" placeholder="E.g. Vane">
                             </div>
                         </div>
 
                         <div class="input-group">
-                            <label>Email</label>
-                            <input type="email" placeholder="julian@example.com">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="julian@example.com">
                         </div>
 
                         <div class="input-group">
-                            <label>Mensaje</label>
-                            <textarea placeholder="Dinos sobre tus requisitos de proyecto..."></textarea>
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" placeholder="Dinos sobre tus requisitos de proyecto..."></textarea>
                         </div>
 
                         <div class="form-footer">
@@ -82,7 +81,7 @@
             <div class="contact-details">
                 <p><i class="fas fa-phone"></i> +34 123 456 789</p>
 
-                <p><i class="fas fa-envelope"></i> info@ejemplo.com</p>
+                <p><i class="fas fa-envelope"></i>curatorial@gmail.com</p>
             </div>
 
             <section class="global-perspective">
@@ -90,17 +89,16 @@
                     <h1>Perspectiva global, precisión local.</h1>
                     <p>Nuestra estructura de servicios opera a nivel mundial, con centros estratégicos en las principales capitales culturales. Garantizamos el mismo nivel de selección, ya sea que se encuentre en Londres, Nueva York o Tokio.</p>
                     <div class="cities">
-                        <h4>LONDON</h4>
-                        <h4>PARIS</h4>
-                        <h4>NEW YORK</h4>
-                        <h4>MILAN</h4>
+                        <h4>LONDRES</h4>
+                        <h4>PARÍS</h4>
+                        <h4>NUEVA YORK</h4>
+                        <h4>MILÁN</h4>
                     </div>
                 </div>
                 <div class="image-content">
-                    <img src="../assets/images/color-explosion.png" alt="explosion de colores">
+                    <img src="../assets/images/color-explosion.png" alt="explosión de colores">
                 </div>
             </section>            
-
         </main>
 
   <footer class="main-footer">
@@ -163,8 +161,7 @@
         </p>
       </section>
     </div>
-  </footer>
-        </main>            
-    </body>
+  </footer>       
+</body>
 
 </html>

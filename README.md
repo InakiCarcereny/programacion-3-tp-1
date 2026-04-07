@@ -32,7 +32,8 @@ El objetivo es aplicar conocimientos de HTML semántico, CSS y trabajo colaborat
            ├── image.png
            ├── home.png
            ├── home-2.png
-           ├── home-3.png  
+           ├── home-3.png
+           ├── resto de imágenes
  ├── /pages
       ├── contacto.html
       ├── equipo.html
